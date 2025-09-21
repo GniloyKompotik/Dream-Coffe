@@ -1,0 +1,142 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #faf3e0;
+    color: #3e2723;
+}
+
+header {
+    background-color: #6d4c41;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #8d6e63;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #d7ccc8;
+    color: #3e2723;
+    border-radius: 5px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff8e1;
+    border: 1px solid #d7ccc8;
+    border-radius: 8px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #6d4c41;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3e2723;
+}
+
+footer {
+    background-color: #6d4c41;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 14px;
+    border-top: 3px solid #8d6e63;
+}
+
+.logo-big {
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #d7ccc8;
+}
+
+.menu-text {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menu-price {
+    color: #6d4c41;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.menu-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+
+
+.logo {
+    position: absolute;
+    right: 10px;
+    top: -45px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
