@@ -140,3 +140,28 @@ footer {
     height: 200px;
     object-fit: cover;
 }
+
+.service-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-image, .special-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.service-box, .special-box {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px dashed #8A6F47;
+}
+
+.service-image, .special-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
