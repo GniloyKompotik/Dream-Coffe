@@ -9,57 +9,54 @@
 
 </head>
 <body>
-<header><h1>Menu</h1></header>
-<nav>
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="services.html">Services</a>
-    <a href="specials.html">Specials</a>
-    <a href="reviews.html">Reviews</a>
-    <a href="faq.html">FAQ</a>
-</nav>
+<header class ="navbar">
+    <h1>Welcome to Dream Coffee!</h1>
+    <nav>
+        <ul class="nav-links">  
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="specials.html">Specials</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        </ul> 
+    </nav>
+</header>
 
-<div class="container">
-    <section>
-        <h2>Coffee</h2>
+ <main class="menu-page">
+    <h1>Our Menu</h1>
 
-        <div class="menu-item">
-            <div class="menu-text">Espresso <span class="menu-price">1200 ₸</span></div>
-            <img src="images/espresso.webp" class="menu-img">
+    <div class="menu-grid">
+      <div class="menu-item">
+        <div class="menu-text">
+          <h3>Americano</h3>
+          <p>Strong black coffee</p>
+          <span>$3.50</span>
         </div>
+        <img src="images/americano.jpeg" alt="Americano">
+      </div>
 
-        <div class="menu-item">
-            <div class="menu-text">Cappuccino <span class="menu-price">1500 ₸</span></div>
-            <img src="images/cappuccino.jpg" class="menu-img">
+      <div class="menu-item">
+        <div class="menu-text">
+          <h3>Mocha</h3>
+          <p>Chocolate flavored espresso</p>
+          <span>$4.20</span>
         </div>
+        <img src="images/mocha.png" alt="Mocha">
+      </div>
 
-        <div class="menu-item">
-            <div class="menu-text">Latte <span class="menu-price">1650 ₸</span></div>
-            <img src="images/latte.jpg" class="menu-img">
+      <div class="menu-item">
+        <div class="menu-text">
+          <h3>Caramel Latte</h3>
+          <p>Espresso with caramel syrup</p>
+          <span>$4.50</span>
         </div>
-    </section>
-
-    <section>
-        <h2>Pastries</h2>
-
-        <div class="menu-item">
-            <div class="menu-text">Croissant <span class="menu-price">900 ₸</span></div>
-            <img src="images/croissant.jpg" class="menu-img">
-        </div>
-
-        <div class="menu-item">
-            <div class="menu-text">Cheesecake <span class="menu-price">1500 ₸</span></div>
-            <img src="images/cheesecake.jpg" class="menu-img">
-        </div>
-
-        <div class="menu-item">
-            <div class="menu-text">Donut <span class="menu-price">1200 ₸</span></div>
-            <img src="images/donut.jpg" class="menu-img">
-        </div>
-    </section>
-</div>
+        <img src="images/caramel_latte.jpg" alt="Caramel Latte">
+      </div>
+    </div>
+  </main>
 
 <footer>
     <p>Team: Dream Team</p>

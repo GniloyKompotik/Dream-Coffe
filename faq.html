@@ -1,38 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>FAQ</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/dream coffe.ico">
-    <img src="images/dream coffe.png" class="logo">
+  <meta charset="UTF-8">
+  <title>FAQ</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="faq-bg"> <!-- ✅ фон для FAQ -->
 <header><h1>Frequently Asked Questions</h1></header>
 <nav>
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="about.html">About Us</a>
-    <a href="contact.html">Contacts</a>
-    <a href="services.html">Services</a>
-    <a href="specials.html">Specials</a>
-    <a href="reviews.html">Reviews</a>
-    <a href="faq.html">FAQ</a>
+  <a href="index.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contacts</a>
+  <a href="services.html">Services</a>
+  <a href="specials.html">Specials</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="faq.html">FAQ</a>
 </nav>
 
 <div class="container">
-    <section>
-        <h2>Q: Do you offer delivery?</h2>
-        <p>Yes, we deliver within the city.</p>
+  <section class="faq-container">
 
-        <h2>Q: Can I book a table?</h2>
-        <p>Yes, you can book through the website or by phone.</p>
-    </section>
+    <div class="faq-item">
+      <button class="faq-question">❓ Do you offer delivery?</button>
+      <div class="faq-answer">Yes, we deliver within the city.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">☕ Can I book a table?</button>
+      <div class="faq-answer">Yes, you can book through the website or by phone.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">💳 Do you accept credit cards?</button>
+      <div class="faq-answer">Yes, we accept all major cards and mobile payments.</div>
+    </div>
+
+  </section>
 </div>
 
 <footer>
-    <p>Team: Dream Team</p>
-    <p>Members: Amangeldiyev Diyar, Daniil Khvan, Zhetpis Baigulov, Torehan Kalin</p>
+  <p>Team: Dream Team</p>
+  <p>Members: Amangeldiyev Diyar, Daniil Khvan, Zhetpis Baigulov, Torekhan Kalin</p>
 </footer>
+
+<script>
+  const questions = document.querySelectorAll(".faq-question");
+  questions.forEach(q => {
+    q.addEventListener("click", () => {
+      const answer = q.nextElementSibling;
+      answer.style.display = answer.style.display === "block" ? "none" : "block";
+    });
+  });
+</script>
 </body>
 </html>
