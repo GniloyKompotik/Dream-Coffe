@@ -1,66 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Menu</title>
-    <link rel="stylesheet" href="style.css">
-    <img src="images/dream coffe.png" class="logo">
-    <link rel="icon" href="images/dream coffe.ico">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamCoffee - Menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-<header class ="navbar">
-    <h1>Welcome to Dream Coffee!</h1>
-    <nav>
-        <ul class="nav-links">  
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contacts</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="specials.html">Specials</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        </ul> 
-    </nav>
-</header>
 
- <main class="menu-page">
-    <h1>Our Menu</h1>
-
-    <div class="menu-grid">
-      <div class="menu-item">
-        <div class="menu-text">
-          <h3>Americano</h3>
-          <p>Strong black coffee</p>
-          <span>$3.50</span>
-        </div>
-        <img src="images/americano.jpeg" alt="Americano">
-      </div>
-
-      <div class="menu-item">
-        <div class="menu-text">
-          <h3>Mocha</h3>
-          <p>Chocolate flavored espresso</p>
-          <span>$4.20</span>
-        </div>
-        <img src="images/mocha.png" alt="Mocha">
-      </div>
-
-      <div class="menu-item">
-        <div class="menu-text">
-          <h3>Caramel Latte</h3>
-          <p>Espresso with caramel syrup</p>
-          <span>$4.50</span>
-        </div>
-        <img src="images/caramel_latte.jpg" alt="Caramel Latte">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">DreamCoffee</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
-  </main>
+  </nav>
 
-<footer>
-    <p>Team: Dream Team</p>
-    <p>Members: Amangeldiyev Diyar, Daniil Khvan, Zhetpis Baigulov, Torehan Kalin</p>
-</footer>
+  <section class="hero-menu mt-5 pt-5 py-5 bg-primary text-white text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-3">Our Menu</h1>
+      <p class="lead">Discover our handcrafted coffees, teas, and fresh pastries.</p>
+    </div>
+  </section>
+
+  <section class="container py-5">
+    <h2 class="text-center mb-5">Coffee Classics</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <img src="https://blogstudio.s3.theshoppad.net/coffeeheroau/ec178d83e5f597b162cda1e60cb64194.jpg" class="card-img-top" alt="Espresso">
+          <div class="card-body">
+            <h5 class="card-title">Espresso</h5>
+            <p class="card-text">Rich, bold, and smooth. The pure essence of coffee.</p>
+            <p class="fw-bold">$2.50</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <img src="https://www.cuisinart.com/dw/image/v2/ABAF_PRD/on/demandware.static/-/Sites-us-cuisinart-sfra-Library/default/dw30047d66/images/recipe-Images/cappuccino1-recipe.jpg?sw=1200&sh=1200&sm=fit" class="card-img-top" alt="Cappuccino">
+          <div class="card-body">
+            <h5 class="card-title">Cappuccino</h5>
+            <p class="card-text">Perfect balance of espresso, steamed milk, and foam.</p>
+            <p class="fw-bold">$3.50</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <img src="https://sprudge.com/wp-content/uploads/2016/04/Sprudge-ObjetoEncontrado-JulianaGanan-Sprudge-ObjetoEncontrado-JulianaGanan-BSB_Coffee_Shops_Guide_objeto_latte_art_Lucas_Hamu_01.jpg" class="card-img-top" alt="Latte">
+          <div class="card-body">
+            <h5 class="card-title">Latte</h5>
+            <p class="card-text">Creamy espresso drink with silky steamed milk.</p>
+            <p class="fw-bold">$4.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-5">
+    <h2 class="text-center mb-5">Specialty Drinks</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/the_perfect_mocha_coffee_29100_16x9.jpg" class="card-img-top" alt="Mocha">
+          <div class="card-body">
+            <h5 class="card-title">Mocha</h5>
+            <p class="card-text">Espresso meets chocolate and whipped cream.</p>
+            <p class="fw-bold">$4.50</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=600&h=400&fit=crop" class="card-img-top" alt="Caramel Macchiato">
+          <div class="card-body">
+            <h5 class="card-title">Caramel Macchiato</h5>
+            <p class="card-text">Sweet caramel layered over espresso and milk.</p>
+            <p class="fw-bold">$4.75</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <img src="https://images.ctfassets.net/v601h1fyjgba/71VWCR6Oclk14tsdM9gTyM/6921cc6b21746f62846c99fa6a872c35/Iced_Latte.jpg" class="card-img-top" alt="Iced Latte">
+          <div class="card-body">
+            <h5 class="card-title">Iced Latte</h5>
+            <p class="card-text">Refreshing cold version of our classic latte.</p>
+            <p class="fw-bold">$4.25</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-5">
+    <h2 class="text-center mb-5">Fresh Pastries</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <img src="https://www.hormelfoods.com/wp-content/uploads/culinary_collective_croissants-Recipe-2400x1000-1.jpg" class="card-img-top" alt="Croissant">
+          <div class="card-body">
+            <h5 class="card-title">Butter Croissant</h5>
+            <p class="card-text">Flaky, buttery pastry baked fresh every morning.</p>
+            <p class="fw-bold">$2.75</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <img src="https://www.kingarthurbaking.com/sites/default/files/2022-12/KABC_Quick-Breads_Blueberry-Muffin_08304.jpg" class="card-img-top" alt="Muffin">
+          <div class="card-body">
+            <h5 class="card-title">Blueberry Muffin</h5>
+            <p class="card-text">Sweet muffin packed with fresh blueberries.</p>
+            <p class="fw-bold">$3.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <img src="https://static01.nyt.com/images/2021/11/02/dining/dg-Tall-and-Creamy-Cheesecake-copy/dg-Tall-and-Creamy-Cheesecake-jumbo.jpg" class="card-img-top" alt="Cheesecake">
+          <div class="card-body">
+            <h5 class="card-title">Cheesecake</h5>
+            <p class="card-text">Rich and creamy cheesecake with a buttery crust.</p>
+            <p class="fw-bold">$4.50</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-light py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>DreamCoffee</h5>
+          <p>Your perfect coffee destination since 2020</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-1">Team Members:</p>
+          <p class="mb-0">
+            <small>
+              [Student Name 1] | [Student Name 2] | [Student Name 3]<br>
+              Group: [Group Number] | Assignment #4
+            </small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>
