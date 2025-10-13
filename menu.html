@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DreamCoffee - Menu</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
@@ -31,12 +31,36 @@
     </div>
   </nav>
 
+  
   <section class="hero-menu mt-5 pt-5 py-5 bg-primary text-white text-center">
     <div class="container">
       <h1 class="display-4 fw-bold mb-3">Our Menu</h1>
       <p class="lead">Discover our handcrafted coffees, teas, and fresh pastries.</p>
     </div>
   </section>
+
+<div class="text-center my-4">
+  <button id="openPopup" class="btn btn-warning mt-4">Subscribe Now</button>
+</div>
+
+
+<div id="popupForm" class="popup-container">
+  <div class="popup-content">
+    <span id="closePopup" class="close-btn">&times;</span>
+    <h3>Subscribe to our Newsletter</h3>
+    <form id="subscribeForm">
+      <input type="email" id="popupEmail" class="form-control mb-3" placeholder="Enter your email" required>
+      <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+<div class="text-center my-4">
+  <button id="changeColorBtn" class="btn btn-info">Change Background Color</button>
+</div>
 
   <section class="container py-5">
     <h2 class="text-center mb-5">Coffee Classics</h2>
@@ -145,6 +169,37 @@
       </div>
     </div>
   </section>
+<section class="container py-5" id="faq">
+  <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          What makes DreamCoffee special?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          We source our beans from sustainable farms and roast them daily for ultimate freshness.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+          Do you offer vegan options?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Yes! We have plant-based milks and vegan pastries.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <footer class="bg-dark text-light py-4 mt-5">
     <div class="container">
@@ -159,6 +214,7 @@
             <small>
             Diyar Amangeldiyev <br>| Assignment #4
             </small>
+            <p id="dateTime" class="mt-3 text-secondary small"></p>
           </p>
         </div>
       </div>
@@ -167,5 +223,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="scripts/main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

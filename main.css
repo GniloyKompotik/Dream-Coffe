@@ -214,3 +214,32 @@
   height: 200px;
   object-fit: cover;
 }
+
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 22px;
+  cursor: pointer;
+}
