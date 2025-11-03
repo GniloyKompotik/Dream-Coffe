@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamCoffee - Menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+    <span class="theme-icon">🌙</span>
+  </button>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">DreamCoffee</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-menu mt-5 pt-5 py-5 bg-primary text-white text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-3 fade-in">Our Menu</h1>
+      <p class="lead slide-up">Discover our handcrafted coffees, teas, and fresh pastries.</p>
+      <p class="small text-light">Press 'C' for Coffee, 'S' for Specialty, 'P' for Pastries, or 'A' for All</p>
+    </div>
+  </section>
+
+  <div class="text-center my-4">
+    <button id="openPopup" class="btn btn-warning mt-4 pulse-btn">Subscribe to Newsletter</button>
+  </div>
+
+  <div id="popupForm" class="popup-container">
+    <div class="popup-content scale-in">
+      <span id="closePopup" class="close-btn">&times;</span>
+      <h3>Subscribe to our Newsletter</h3>
+      <form id="subscribeForm">
+        <input type="email" id="popupEmail" class="form-control mb-3" placeholder="Enter your email" required>
+        <div class="invalid-feedback">Please enter a valid email address.</div>
+        <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+      </form>
+      <div id="subscribeSuccess" class="alert alert-success mt-3 d-none">Thank you for subscribing!</div>
+    </div>
+  </div>
+
+  <section class="container py-4">
+    <div class="row mb-4">
+      <div class="col-md-8 mx-auto">
+        <div class="input-group mb-3">
+          <input type="text" id="searchInput" class="form-control form-control-lg" placeholder="Search menu items... (Try typing or use keyboard shortcuts)">
+          <button class="btn btn-outline-primary" id="searchBtn">Search</button>
+        </div>
+        <div class="d-flex justify-content-center gap-2 flex-wrap">
+          <button class="btn btn-outline-primary filter-btn active" data-filter="all">All Items</button>
+          <button class="btn btn-outline-success filter-btn" data-filter="coffee">Coffee Classics</button>
+          <button class="btn btn-outline-warning filter-btn" data-filter="specialty">Specialty Drinks</button>
+          <button class="btn btn-outline-danger filter-btn" data-filter="pastry">Fresh Pastries</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-5">
+    <h2 class="text-center mb-5">Coffee Classics</h2>
+    <div class="row" id="coffeeSection">
+      <div class="col-lg-4 col-md-6 mb-4 menu-item" data-category="coffee" data-name="espresso">
+        <div class="card h-100 text-center hover-lift">
+          <img src="https://blogstudio.s3.theshoppad.net/coffeeheroau/ec178d83e5f597b162cda1e60cb64194.jpg" class="card-img-top" alt="Espresso">
+          <div class="card-body">
+            <h5 class="card-title">Espresso</h5>
+            <p class="card-text">Rich, bold, and smooth. The pure essence of coffee.</p>
+            <p class="fw-bold">1200₸</p>
+            <button class="btn btn-sm btn-primary add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 menu-item" data-category="coffee" data-name="cappuccino">
+        <div class="card h-100 text-center hover-lift">
+          <img src="https://www.cuisinart.com/dw/image/v2/ABAF_PRD/on/demandware.static/-/Sites-us-cuisinart-sfra-Library/default/dw30047d66/images/recipe-Images/cappuccino1-recipe.jpg?sw=1200&sh=1200&sm=fit" class="card-img-top" alt="Cappuccino">
+          <div class="card-body">
+            <h5 class="card-title">Cappuccino</h5>
+            <p class="card-text">Perfect balance of espresso, steamed milk, and foam.</p>
+            <p class="fw-bold">2500₸</p>
+            <button class="btn btn-sm btn-primary add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 menu-item" data-category="coffee" data-name="latte">
+        <div class="card h-100 text-center hover-lift">
+          <img src="https://sprudge.com/wp-content/uploads/2016/04/Sprudge-ObjetoEncontrado-JulianaGanan-Sprudge-ObjetoEncontrado-JulianaGanan-BSB_Coffee_Shops_Guide_objeto_latte_art_Lucas_Hamu_01.jpg" class="card-img-top" alt="Latte">
+          <div class="card-body">
+            <h5 class="card-title">Latte</h5>
+            <p class="card-text">Creamy espresso drink with silky steamed milk.</p>
+            <p class="fw-bold">3000₸</p>
+            <button class="btn btn-sm btn-primary add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-5">
+    <h2 class="text-center mb-5">Specialty Drinks</h2>
+    <div class="row" id="specialtySection">
+      <div class="col-lg-4 col-md-6 mb-4 menu-item" data-category="specialty" data-name="mocha">
+        <div class="card h-100 text-center hover-lift">
+          <img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/the_perfect_mocha_coffee_29100_16x9.jpg" class="card-img-top" alt="Mocha">
+          <div class="card-body">
+            <h5 class="card-title">Mocha</h5>
+            <p class="card-text">Espresso meets chocolate and whipped cream.</p>
+            <p class="fw-bold">2700₸</p>
+            <button class="btn btn-sm btn-primary add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 menu-item" data-category="specialty" data-name="caramel macchiato">
+        <div class="card h-100 text-center hover-lift">
+          <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=600&h=400&fit=crop" class="card-img-top" alt="Caramel Macchiato">
+          <div class="card-body">
+            <h5 class="card-title">Caramel Macchiato</h5>
+            <p class="card-text">Sweet caramel layered over espresso and milk.</p>
+            <p class="fw-bold">3100₸</p>
+            <button class="btn btn-sm btn-primary add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 menu-item" data-category="specialty" data-name="iced latte">
+        <div class="card h-100 text-center hover-lift">
+          <img src="https://images.ctfassets.net/v601h1fyjgba/71VWCR6Oclk14tsdM9gTyM/6921cc6b21746f62846c99fa6a872c35/Iced_Latte.jpg" class="card-img-top" alt="Iced Latte">
+          <div class="card-body">
+            <h5 class="card-title">Iced Latte</h5>
+            <p class="card-text">Refreshing cold version of our classic latte.</p>
+            <p class="fw-bold">2300₸</p>
+            <button class="btn btn-sm btn-primary add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-5">
+    <h2 class="text-center mb-5">Fresh Pastries</h2>
+    <div class="row" id="pastrySection">
+      <div class="col-lg-4 col-md-6 mb-4 menu-item" data-category="pastry" data-name="croissant">
+        <div class="card h-100 text-center hover-lift">
+          <img src="https://www.hormelfoods.com/wp-content/uploads/culinary_collective_croissants-Recipe-2400x1000-1.jpg" class="card-img-top" alt="Croissant">
+          <div class="card-body">
+            <h5 class="card-title">Butter Croissant</h5>
+            <p class="card-text">Flaky, buttery pastry baked fresh every morning.</p>
+            <p class="fw-bold">1700₸</p>
+            <button class="btn btn-sm btn-primary add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 menu-item" data-category="pastry" data-name="muffin">
+        <div class="card h-100 text-center hover-lift">
+          <img src="https://www.kingarthurbaking.com/sites/default/files/2022-12/KABC_Quick-Breads_Blueberry-Muffin_08304.jpg" class="card-img-top" alt="Muffin">
+          <div class="card-body">
+            <h5 class="card-title">Blueberry Muffin</h5>
+            <p class="card-text">Sweet muffin packed with fresh blueberries.</p>
+            <p class="fw-bold">1500₸</p>
+            <button class="btn btn-sm btn-primary add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 menu-item" data-category="pastry" data-name="cheesecake">
+        <div class="card h-100 text-center hover-lift">
+          <img src="https://static01.nyt.com/images/2021/11/02/dining/dg-Tall-and-Creamy-Cheesecake-copy/dg-Tall-and-Creamy-Cheesecake-jumbo.jpg" class="card-img-top" alt="Cheesecake">
+          <div class="card-body">
+            <h5 class="card-title">Cheesecake</h5>
+            <p class="card-text">Rich and creamy cheesecake with a buttery crust.</p>
+            <p class="fw-bold">3000₸</p>
+            <button class="btn btn-sm btn-primary add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-5" id="faq">
+    <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            What makes DreamCoffee special?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We source our beans from sustainable farms and roast them daily for ultimate freshness.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Do you offer vegan options?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes! We have plant-based milks and vegan pastries.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-light py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>DreamCoffee</h5>
+          <p>Your perfect coffee destination since 2020</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-1">Team Members:</p>
+          <p class="mb-0">
+            <small>Diyar Amangeldiyev | Assignment #8</small>
+          </p>
+          <p id="dateTime" class="mt-3 text-secondary small"></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="menu.js"></script>
+</body>
+</html>
